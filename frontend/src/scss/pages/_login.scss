@@ -1,0 +1,42 @@
+@import "../app";
+
+.login-container {
+  @include absolute-center;
+  @include box-shadow;
+  @include border-radius;
+
+  background-color: $colorSecondary;
+  width: 500px;
+  padding: 25px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .input-container {
+    display: block;
+    margin-top: 20px;
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      height: 40px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      background: $colorBtn;
+      color: #fff;
+
+      &:hover {
+        background-color: $colorBtnHover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .login-container {
+    max-width: 350px;
+  }
+}

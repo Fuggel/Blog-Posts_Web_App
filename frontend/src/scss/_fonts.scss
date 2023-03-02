@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sarabun:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+// FONTS
+$fontFamilyHeader: "Sarabun";
+$fontFamilyBody: "Roboto";
+
+// LARGE
+$fontHeader: bold 32px/36px $fontFamilyHeader;
+
+// MEDIUM
+$fontNormal: normal 18px/26px $fontFamilyBody;
+
+// ERROR
+$fontError: bold 16px/16px $fontFamilyBody;

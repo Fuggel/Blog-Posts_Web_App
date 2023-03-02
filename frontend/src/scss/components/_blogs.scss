@@ -1,0 +1,54 @@
+@import "../app";
+
+.blog {
+  @include box-shadow;
+  @include border-radius;
+  @include border-black;
+
+  position: relative;
+  margin: 50px auto;
+  width: 750px;
+  background-color: $colorSecondary;
+  padding: 25px;
+
+  h1 {
+    font: $fontHeader;
+    text-align: center;
+  }
+
+  h1,
+  p {
+    word-wrap: break-word;
+  }
+
+  img {
+    @include border-black;
+    @include border-radius-btn;
+
+    display: block;
+    margin: 25px auto 25px auto;
+    width: 100%;
+  }
+
+  .blog-btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .edit-btn {
+    color: #fff;
+    background-color: $colorBtn;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .blog {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .blog {
+    max-width: 350px;
+  }
+}
